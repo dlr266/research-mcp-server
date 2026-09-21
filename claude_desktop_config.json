@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "research": {
+      "command": "/Users/davidreeves/Python/research-mcp-server/.venv/bin/python",
+      "args": ["/Users/davidreeves/Python/research-mcp-server/research_server.py"]
+    }
+  }
+}
