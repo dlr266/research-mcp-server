@@ -91,10 +91,16 @@ claude_desktop_config.json  MCP config for Claude Desktop
 Things to try in Claude Desktop:
 
 * "Search for papers on model context protocol security."
-* "Cite the first one in APA."  then  "Now give me the BibTeX."
-* "Cite doi:10.1145/3796519."
-* Attach the `bibliography://all` resource (paperclip / "+" menu).
-* Use the `literature_review` prompt with a topic.
+* "Cite paper W7129030749 in APA style."  then  "Now cite the same paper in bibtex style."
+* "Cite doi:10.1109/comst.2015.2444095 in APA style."
+* Resource: **+** > Connectors > Add from research > **Bibliography**, then
+  "Show me the attached bibliography."
+* Prompt: **+** > Connectors > Add from research > **Literature review**,
+  fill in `topic` and `num_papers`, submit.
+
+Note: Claude Desktop lets *you* attach a resource; it does not let the model
+read resources on its own. `test_client.py` shows the resource and prompt
+working over a direct MCP connection.
 
 ## Demo of the best practices
 
